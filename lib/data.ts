@@ -1,81 +1,1176 @@
 // Dados fictícios para demonstração
 export const healthData = [
-  {
-    id: 1,
-    name: "UBS Zona 7",
-    position: [-23.4173, -51.9275],
-    address: "Av. Mandacaru, 1200 - Zona 7",
-    spending: {
-      total: 1250000,
-      breakdown: [
-        { label: "Equipamentos", value: 450000 },
-        { label: "Medicamentos", value: 350000 },
-        { label: "Pessoal", value: 300000 },
-        { label: "Manutenção", value: 150000 },
+    {
+      "id": "way/187794553",
+      "name": "Hospital Universitário Regional de Maringá",
+      "position": [
+        -23.400067,
+        -51.9550711
       ],
+      "address": "Avenida Mandacaru",
+      "spending": {
+        "total": 940690,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 386484
+          },
+          {
+            "label": "Medicamentos",
+            "value": 187481
+          },
+          {
+            "label": "Pessoal",
+            "value": 50210
+          },
+          {
+            "label": "Manutenção",
+            "value": 316515
+          }
+        ]
+      }
     },
-  },
-  {
-    id: 2,
-    name: "UBS Alvorada",
-    position: [-23.4373, -51.9475],
-    address: "Rua das Flores, 500 - Jd. Alvorada",
-    spending: {
-      total: 980000,
-      breakdown: [
-        { label: "Equipamentos", value: 320000 },
-        { label: "Medicamentos", value: 280000 },
-        { label: "Pessoal", value: 250000 },
-        { label: "Manutenção", value: 130000 },
+    {
+      "id": "way/205625800",
+      "name": "UBS Cidade Alta",
+      "position": [
+        -23.4611868,
+        -51.9191632
       ],
+      "address": "Rua Ataulfo Alves",
+      "spending": {
+        "total": 1488086,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 129514
+          },
+          {
+            "label": "Medicamentos",
+            "value": 297989
+          },
+          {
+            "label": "Pessoal",
+            "value": 528520
+          },
+          {
+            "label": "Manutenção",
+            "value": 532063
+          }
+        ]
+      }
     },
-  },
-  {
-    id: 3,
-    name: "UBS Zona Sul",
-    position: [-23.4473, -51.9175],
-    address: "Av. Colombo, 3200 - Zona Sul",
-    spending: {
-      total: 1450000,
-      breakdown: [
-        { label: "Equipamentos", value: 520000 },
-        { label: "Medicamentos", value: 420000 },
-        { label: "Pessoal", value: 350000 },
-        { label: "Manutenção", value: 160000 },
+    {
+      "id": "way/544996717",
+      "name": "UBS Jardim Quebec",
+      "position": [
+        -23.3891903,
+        -51.9372417
       ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 854554,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 211195
+          },
+          {
+            "label": "Medicamentos",
+            "value": 349296
+          },
+          {
+            "label": "Pessoal",
+            "value": 198799
+          },
+          {
+            "label": "Manutenção",
+            "value": 95264
+          }
+        ]
+      }
     },
-  },
-  {
-    id: 4,
-    name: "UBS Pinheiros",
-    position: [-23.4273, -51.9575],
-    address: "Rua dos Pinheiros, 800 - Jd. Pinheiros",
-    spending: {
-      total: 1120000,
-      breakdown: [
-        { label: "Equipamentos", value: 380000 },
-        { label: "Medicamentos", value: 320000 },
-        { label: "Pessoal", value: 280000 },
-        { label: "Manutenção", value: 140000 },
+    {
+      "id": "way/545103004",
+      "name": "UBS Mandacaru",
+      "position": [
+        -23.4115894,
+        -51.9559454
       ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1695314,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 92282
+          },
+          {
+            "label": "Medicamentos",
+            "value": 534887
+          },
+          {
+            "label": "Pessoal",
+            "value": 545579
+          },
+          {
+            "label": "Manutenção",
+            "value": 522566
+          }
+        ]
+      }
     },
-  },
-  {
-    id: 5,
-    name: "UBS Centro",
-    position: [-23.4223, -51.9375],
-    address: "Av. Brasil, 1500 - Centro",
-    spending: {
-      total: 1680000,
-      breakdown: [
-        { label: "Equipamentos", value: 580000 },
-        { label: "Medicamentos", value: 480000 },
-        { label: "Pessoal", value: 420000 },
-        { label: "Manutenção", value: 200000 },
+    {
+      "id": "way/546242103",
+      "name": "UPA - Zona Norte",
+      "position": [
+        -23.3974429,
+        -51.9130358
       ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1605702,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 9346
+          },
+          {
+            "label": "Medicamentos",
+            "value": 520026
+          },
+          {
+            "label": "Pessoal",
+            "value": 787100
+          },
+          {
+            "label": "Manutenção",
+            "value": 289230
+          }
+        ]
+      }
     },
-  },
-]
+    {
+      "id": "way/546914569",
+      "name": "UBS Alvorada III",
+      "position": [
+        -23.3876079,
+        -51.9076274
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 863174,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 169299
+          },
+          {
+            "label": "Medicamentos",
+            "value": 284933
+          },
+          {
+            "label": "Pessoal",
+            "value": 69953
+          },
+          {
+            "label": "Manutenção",
+            "value": 338989
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/807192618",
+      "name": "UBS Jardim Iguaçu",
+      "position": [
+        -23.4496206,
+        -51.9596411
+      ],
+      "address": "Avenida Arquiteto Nildo Ribeiro da Rocha, 5328, Maringá, 87065-010",
+      "spending": {
+        "total": 1532330,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 758701
+          },
+          {
+            "label": "Medicamentos",
+            "value": 181718
+          },
+          {
+            "label": "Pessoal",
+            "value": 414676
+          },
+          {
+            "label": "Manutenção",
+            "value": 177235
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/839516687",
+      "name": "UBS Paris IV",
+      "position": [
+        -23.3811007,
+        -51.9665734
+      ],
+      "address": "Rua Pioneiro Antônio Bughi",
+      "spending": {
+        "total": 1277008,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 441885
+          },
+          {
+            "label": "Medicamentos",
+            "value": 397223
+          },
+          {
+            "label": "Pessoal",
+            "value": 268563
+          },
+          {
+            "label": "Manutenção",
+            "value": 169337
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/845151255",
+      "name": "UBS Floriano",
+      "position": [
+        -23.5247132,
+        -52.0513708
+      ],
+      "address": "Rua Pitanga, Floriano",
+      "spending": {
+        "total": 934773,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 113182
+          },
+          {
+            "label": "Medicamentos",
+            "value": 168775
+          },
+          {
+            "label": "Pessoal",
+            "value": 421120
+          },
+          {
+            "label": "Manutenção",
+            "value": 231696
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/874733653",
+      "name": "Hospital Municipal de Maringá Thelma Villanova Kasprowicz",
+      "position": [
+        -23.4531528,
+        -51.9239936
+      ],
+      "address": "Avenida Arquiteto Nildo Ribeiro da Rocha, 865, 87053-270",
+      "spending": {
+        "total": 1366020,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 242753
+          },
+          {
+            "label": "Medicamentos",
+            "value": 15341
+          },
+          {
+            "label": "Pessoal",
+            "value": 654816
+          },
+          {
+            "label": "Manutenção",
+            "value": 453110
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1111901677",
+      "name": "UBS Zona Sul",
+      "position": [
+        -23.4447111,
+        -51.9290812
+      ],
+      "address": "Rua Tabaetê, 399",
+      "spending": {
+        "total": 1384955,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 220671
+          },
+          {
+            "label": "Medicamentos",
+            "value": 343788
+          },
+          {
+            "label": "Pessoal",
+            "value": 156717
+          },
+          {
+            "label": "Manutenção",
+            "value": 663779
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383023885",
+      "name": "UBS Requião/Guaiapó",
+      "position": [
+        -23.4106734,
+        -51.8733436
+      ],
+      "address": "Praça Vereador Miguel de Oliveira, 115",
+      "spending": {
+        "total": 832782,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 102725
+          },
+          {
+            "label": "Medicamentos",
+            "value": 530198
+          },
+          {
+            "label": "Pessoal",
+            "value": 67459
+          },
+          {
+            "label": "Manutenção",
+            "value": 132400
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383881625",
+      "name": "UBS Parigot de Souza",
+      "position": [
+        -23.4143337,
+        -51.8867647
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1359639,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 450234
+          },
+          {
+            "label": "Medicamentos",
+            "value": 76239
+          },
+          {
+            "label": "Pessoal",
+            "value": 398672
+          },
+          {
+            "label": "Manutenção",
+            "value": 434494
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383881745",
+      "name": "UBS Jardim Pinheiros",
+      "position": [
+        -23.4100335,
+        -51.8969491
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 679268,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 231633
+          },
+          {
+            "label": "Medicamentos",
+            "value": 79632
+          },
+          {
+            "label": "Pessoal",
+            "value": 255090
+          },
+          {
+            "label": "Manutenção",
+            "value": 112913
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383884830",
+      "name": "UBS Tuiuti",
+      "position": [
+        -23.4192981,
+        -51.9073533
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1340926,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 268008
+          },
+          {
+            "label": "Medicamentos",
+            "value": 68063
+          },
+          {
+            "label": "Pessoal",
+            "value": 426433
+          },
+          {
+            "label": "Manutenção",
+            "value": 578422
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383885281",
+      "name": "UBS Piatã",
+      "position": [
+        -23.4003847,
+        -51.8884154
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 558028,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 46910
+          },
+          {
+            "label": "Medicamentos",
+            "value": 209741
+          },
+          {
+            "label": "Pessoal",
+            "value": 180686
+          },
+          {
+            "label": "Manutenção",
+            "value": 120691
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383885501",
+      "name": "UBS Paulino",
+      "position": [
+        -23.3950903,
+        -51.8992566
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 983175,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 577411
+          },
+          {
+            "label": "Medicamentos",
+            "value": 84463
+          },
+          {
+            "label": "Pessoal",
+            "value": 94024
+          },
+          {
+            "label": "Manutenção",
+            "value": 227277
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383885757",
+      "name": "UBS Jardim Alvorada I",
+      "position": [
+        -23.401096,
+        -51.9219798
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1247247,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 205888
+          },
+          {
+            "label": "Medicamentos",
+            "value": 251330
+          },
+          {
+            "label": "Pessoal",
+            "value": 379223
+          },
+          {
+            "label": "Manutenção",
+            "value": 410806
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383886129",
+      "name": "UBS Morangueira",
+      "position": [
+        -23.408353,
+        -51.9157024
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1857533,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 790371
+          },
+          {
+            "label": "Medicamentos",
+            "value": 363589
+          },
+          {
+            "label": "Pessoal",
+            "value": 305222
+          },
+          {
+            "label": "Manutenção",
+            "value": 398351
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383886230",
+      "name": "UBS Vila Esperança",
+      "position": [
+        -23.4016777,
+        -51.9377176
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 974343,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 111971
+          },
+          {
+            "label": "Medicamentos",
+            "value": 256532
+          },
+          {
+            "label": "Pessoal",
+            "value": 304803
+          },
+          {
+            "label": "Manutenção",
+            "value": 301037
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383886378",
+      "name": "UBS Grevíleas",
+      "position": [
+        -23.386935,
+        -51.9300597
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1444237,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 504849
+          },
+          {
+            "label": "Medicamentos",
+            "value": 438280
+          },
+          {
+            "label": "Pessoal",
+            "value": 435803
+          },
+          {
+            "label": "Manutenção",
+            "value": 65305
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383887093",
+      "name": "UBS Portal das Torres",
+      "position": [
+        -23.3699948,
+        -51.9303606
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1464382,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 514185
+          },
+          {
+            "label": "Medicamentos",
+            "value": 132947
+          },
+          {
+            "label": "Pessoal",
+            "value": 360149
+          },
+          {
+            "label": "Manutenção",
+            "value": 457101
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383887171",
+      "name": "UBS Império do Sol",
+      "position": [
+        -23.381804,
+        -51.9517626
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1728814,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 352361
+          },
+          {
+            "label": "Medicamentos",
+            "value": 456993
+          },
+          {
+            "label": "Pessoal",
+            "value": 432331
+          },
+          {
+            "label": "Manutenção",
+            "value": 487129
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383887379",
+      "name": "UBS Ney Braga",
+      "position": [
+        -23.3967305,
+        -51.9679099
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 738686,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 23837
+          },
+          {
+            "label": "Medicamentos",
+            "value": 74615
+          },
+          {
+            "label": "Pessoal",
+            "value": 380830
+          },
+          {
+            "label": "Manutenção",
+            "value": 259404
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383887540",
+      "name": "UBS Vila Vardelina",
+      "position": [
+        -23.4004752,
+        -51.9605248
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1783932,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 233291
+          },
+          {
+            "label": "Medicamentos",
+            "value": 553952
+          },
+          {
+            "label": "Pessoal",
+            "value": 465908
+          },
+          {
+            "label": "Manutenção",
+            "value": 530781
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383887961",
+      "name": "UBS Jardim Olímpico",
+      "position": [
+        -23.4056641,
+        -51.9806155
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1569829,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 183536
+          },
+          {
+            "label": "Medicamentos",
+            "value": 593341
+          },
+          {
+            "label": "Pessoal",
+            "value": 491515
+          },
+          {
+            "label": "Manutenção",
+            "value": 301437
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383888418",
+      "name": "UBS Iguatemi",
+      "position": [
+        -23.3707719,
+        -52.0645194
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1375163,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 422359
+          },
+          {
+            "label": "Medicamentos",
+            "value": 449268
+          },
+          {
+            "label": "Pessoal",
+            "value": 346820
+          },
+          {
+            "label": "Manutenção",
+            "value": 156716
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383888672",
+      "name": "UBS Maringá Velho",
+      "position": [
+        -23.4233065,
+        -51.9647125
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 611522,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 280687
+          },
+          {
+            "label": "Medicamentos",
+            "value": 43319
+          },
+          {
+            "label": "Pessoal",
+            "value": 24777
+          },
+          {
+            "label": "Manutenção",
+            "value": 262739
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383888723",
+      "name": "UBS Zona 06",
+      "position": [
+        -23.4193099,
+        -51.9587936
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 756642,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 377371
+          },
+          {
+            "label": "Medicamentos",
+            "value": 271437
+          },
+          {
+            "label": "Pessoal",
+            "value": 42683
+          },
+          {
+            "label": "Manutenção",
+            "value": 65151
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383888923",
+      "name": "UBS Zona 07",
+      "position": [
+        -23.4162117,
+        -51.9306641
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 705574,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 160463
+          },
+          {
+            "label": "Medicamentos",
+            "value": 268007
+          },
+          {
+            "label": "Pessoal",
+            "value": 155673
+          },
+          {
+            "label": "Manutenção",
+            "value": 121431
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383889135",
+      "name": "UBS Vila Operária",
+      "position": [
+        -23.4269396,
+        -51.9212676
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1806383,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 483124
+          },
+          {
+            "label": "Medicamentos",
+            "value": 237860
+          },
+          {
+            "label": "Pessoal",
+            "value": 288783
+          },
+          {
+            "label": "Manutenção",
+            "value": 796616
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383889485",
+      "name": "UBS Jardim Internorte",
+      "position": [
+        -23.4269169,
+        -51.901725
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1092367,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 256662
+          },
+          {
+            "label": "Medicamentos",
+            "value": 332095
+          },
+          {
+            "label": "Pessoal",
+            "value": 102225
+          },
+          {
+            "label": "Manutenção",
+            "value": 401385
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383889547",
+      "name": "UBS Céu Azul",
+      "position": [
+        -23.449793,
+        -51.8995285
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1838955,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 691033
+          },
+          {
+            "label": "Medicamentos",
+            "value": 49151
+          },
+          {
+            "label": "Pessoal",
+            "value": 1060442
+          },
+          {
+            "label": "Manutenção",
+            "value": 38329
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383889835",
+      "name": "UBS São Silvestre",
+      "position": [
+        -23.4547768,
+        -51.9114997
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1055255,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 16839
+          },
+          {
+            "label": "Medicamentos",
+            "value": 306664
+          },
+          {
+            "label": "Pessoal",
+            "value": 349638
+          },
+          {
+            "label": "Manutenção",
+            "value": 382114
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383889896",
+      "name": "UBS Jardim Paraíso",
+      "position": [
+        -23.4684624,
+        -51.9141073
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1077296,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 579237
+          },
+          {
+            "label": "Medicamentos",
+            "value": 36473
+          },
+          {
+            "label": "Pessoal",
+            "value": 27377
+          },
+          {
+            "label": "Manutenção",
+            "value": 434209
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383890648",
+      "name": "UBS Jardim Universo",
+      "position": [
+        -23.457264,
+        -51.9486517
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1891901,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 190817
+          },
+          {
+            "label": "Medicamentos",
+            "value": 791428
+          },
+          {
+            "label": "Pessoal",
+            "value": 520595
+          },
+          {
+            "label": "Manutenção",
+            "value": 389061
+          }
+        ]
+      }
+    },
+    {
+      "id": "way/1383898663",
+      "name": "UBS Jardim Industrial",
+      "position": [
+        -23.4445731,
+        -51.9772349
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1293576,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 372275
+          },
+          {
+            "label": "Medicamentos",
+            "value": 305404
+          },
+          {
+            "label": "Pessoal",
+            "value": 348446
+          },
+          {
+            "label": "Manutenção",
+            "value": 267451
+          }
+        ]
+      }
+    },
+    {
+      "id": "node/5076187704",
+      "name": "Posto de saúde",
+      "position": [
+        -23.3699626,
+        -52.0648722
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1897308,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 10467
+          },
+          {
+            "label": "Medicamentos",
+            "value": 377331
+          },
+          {
+            "label": "Pessoal",
+            "value": 1182897
+          },
+          {
+            "label": "Manutenção",
+            "value": 326613
+          }
+        ]
+      }
+    },
+    {
+      "id": "node/12813120026",
+      "name": "UBS Aclimação",
+      "position": [
+        -23.4437184,
+        -51.9168104
+      ],
+      "address": "Endereço não disponível",
+      "spending": {
+        "total": 1667174,
+        "breakdown": [
+          {
+            "label": "Equipamentos",
+            "value": 312569
+          },
+          {
+            "label": "Medicamentos",
+            "value": 380365
+          },
+          {
+            "label": "Pessoal",
+            "value": 463344
+          },
+          {
+            "label": "Manutenção",
+            "value": 510896
+          }
+        ]
+      }
+    }
+  ]
 
 export const educationData = [
   {
