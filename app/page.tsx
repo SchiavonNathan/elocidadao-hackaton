@@ -10,6 +10,7 @@ import { BarChart2, LogIn, User, LogOut, Wallet, Trophy } from "lucide-react"
 import LoginModal from "@/components/login-modal"
 import UserWallet from "@/components/user-wallet"
 import { useAuth } from "@/hooks/use-auth"
+import logo from "/public/logo-elocidadao.png"
 
 export default function Home() {
   const [isLoginOpen, setIsLoginOpen] = useState(false)
@@ -26,6 +27,7 @@ export default function Home() {
       <main className="min-h-screen flex flex-col">
         <header className="bg-primary text-primary-foreground p-4">
           <div className="container mx-auto flex justify-between items-center">
+            <img src={logo.src} alt="Logo" className="h-20 w-auto" />
             <div>
               <h1 className="text-2xl font-bold">Mapa de Gastos Públicos de Maringá</h1>
               <p className="text-sm opacity-90">Visualize os gastos da prefeitura em saúde e educação</p>
