@@ -114,73 +114,85 @@ export default function ComparativeCharts() {
   return (
     <Card className="w-full mt-8">
       <CardHeader>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="flex flex-col gap-4">
           <div>
             <CardTitle>Comparativo de Gastos</CardTitle>
             <CardDescription>Análise comparativa dos gastos entre diferentes unidades</CardDescription>
           </div>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <Tabs defaultValue="saude" className="w-[500px]" onValueChange={setCategory} value={category}>
-              <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="saude" className="flex items-center gap-2">
-                  <Stethoscope className="h-4 w-4" />
-                  Saúde
-                </TabsTrigger>
-                <TabsTrigger value="educacao" className="flex items-center gap-2">
-                  <School className="h-4 w-4" />
-                  Educação
-                </TabsTrigger>
-                <TabsTrigger value="seguranca" className="flex items-center gap-2">
-                  <Shield className="h-4 w-4" />
-                  Segurança
-                </TabsTrigger>
-                <TabsTrigger value="administracao" className="flex items-center gap-2">
-                  <Building2 className="h-4 w-4" />
-                  Administração
-                </TabsTrigger>
-              </TabsList>
-            </Tabs>
-
-            <Select value={chartType} onValueChange={setChartType}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Tipo de Gráfico" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="bar">
-                  <div className="flex items-center gap-2">
-                    <BarChart3 className="h-4 w-4" />
-                    <span>Gráfico de Barras</span>
-                  </div>
-                </SelectItem>
-                <SelectItem value="pie">
-                  <div className="flex items-center gap-2">
-                    <PieChart className="h-4 w-4" />
-                    <span>Gráfico de Pizza</span>
-                  </div>
-                </SelectItem>
-                <SelectItem value="line">
-                  <div className="flex items-center gap-2">
-                    <TrendingUp className="h-4 w-4" />
-                    <span>Gráfico de Linha</span>
-                  </div>
-                </SelectItem>
-              </SelectContent>
-            </Select>
-
-            {chartType !== "pie" && (
-              <Select value={breakdownType} onValueChange={setBreakdownType}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Tipo de Gasto" />
+          <div className="flex flex-col gap-2 md:flex-row md:items-end md:gap-4 w-full">
+            {/* Seletor de categoria */}
+            <div className="w-full md:w-[180px]">
+              <Select value={category} onValueChange={setCategory}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Categoria" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="total">Gasto Total</SelectItem>
-                  {breakdownCategories.map((category) => (
-                    <SelectItem key={category} value={category.toLowerCase()}>
-                      {category}
-                    </SelectItem>
-                  ))}
+                  <SelectItem value="saude">
+                    <div className="flex items-center gap-2">
+                      <Stethoscope className="h-4 w-4" />
+                      Saúde
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="educacao">
+                    <div className="flex items-center gap-2">
+                      <School className="h-4 w-4" />
+                      Educação
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="seguranca">
+                    <div className="flex items-center gap-2">
+                      <Shield className="h-4 w-4" />
+                      Segurança
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="administracao">
+                    <div className="flex items-center gap-2">
+                      <Building2 className="h-4 w-4" />
+                      Administração
+                    </div>
+                  </SelectItem>
                 </SelectContent>
               </Select>
+            </div>
+            {/* Seletor de tipo de gráfico */}
+            <div className="w-full md:w-[180px]">
+              <Select value={chartType} onValueChange={setChartType}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Tipo de Gráfico" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="bar">
+                    <div className="flex items-center gap-2">
+                      <BarChart3 className="h-4 w-4" />
+                      <span>Gráfico de Barras</span>
+                    </div>
+                  </SelectItem>
+                  <SelectItem value="line">
+                    <div className="flex items-center gap-2">
+                      <TrendingUp className="h-4 w-4" />
+                      <span>Gráfico de Linha</span>
+                    </div>
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            {/* Seletor de tipo de gasto */}
+            {chartType !== "pie" && (
+              <div className="w-full md:w-[180px]">
+                <Select value={breakdownType} onValueChange={setBreakdownType}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Tipo de Gasto" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="total">Gasto Total</SelectItem>
+                    {breakdownCategories.map((category) => (
+                      <SelectItem key={category} value={category.toLowerCase()}>
+                        {category}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             )}
           </div>
         </div>
@@ -209,29 +221,6 @@ export default function ComparativeCharts() {
                   <Bar dataKey={breakdownType} fill="#3b82f6" name={breakdownType} />
                 )}
               </BarChart>
-            </ResponsiveContainer>
-          )}
-
-          {chartType === "pie" && (
-            <ResponsiveContainer width="100%" height="100%">
-              <RPieChart>
-                <Pie
-                  data={pieData}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={true}
-                  label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
-                  outerRadius={200}
-                  fill="#8884d8"
-                  dataKey="value"
-                >
-                  {pieData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip formatter={(value) => formatCurrency(value as number)} />
-                <Legend />
-              </RPieChart>
             </ResponsiveContainer>
           )}
 

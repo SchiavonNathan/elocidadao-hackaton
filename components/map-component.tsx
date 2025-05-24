@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { School, Stethoscope, MapPin, Flame, Shield, Building2 } from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 // Carregamento dinâmico do mapa para evitar problemas de SSR
 const MapWithNoSSR = dynamic(() => import("./map-with-layers"), {
@@ -33,34 +34,51 @@ export default function MapComponent() {
             <CardTitle>Mapa de Gastos</CardTitle>
             <CardDescription>Selecione uma categoria para visualizar os gastos públicos em Maringá</CardDescription>
           </div>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <Tabs defaultValue="saude" className="w-full" onValueChange={setActiveTab}>
-              <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="saude" className="flex items-center gap-2">
-                  <Stethoscope className="h-4 w-4" />
-                  Saúde
-                </TabsTrigger>
-                <TabsTrigger value="educacao" className="flex items-center gap-2">
-                  <School className="h-4 w-4" />
-                  Educação
-                </TabsTrigger>
-                <TabsTrigger value="seguranca" className="flex items-center gap-2">
-                  <Shield className="h-4 w-4" />
-                  Segurança
-                </TabsTrigger>
-                <TabsTrigger value="administracao" className="flex items-center gap-2">
-                  <Building2 className="h-4 w-4" />
-                  Administração
-                </TabsTrigger>
-              </TabsList>
-            </Tabs>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full md:w-auto">
+            {/* Botão de seleção para as categorias */}
+            <Select value={activeTab} onValueChange={setActiveTab}>
+              <SelectTrigger className="w-full sm:w-[200px]">
+                <SelectValue placeholder="Categoria" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="saude">
+                  <div className="flex items-center gap-2">
+                    <Stethoscope className="h-4 w-4" />
+                    Saúde
+                  </div>
+                </SelectItem>
+                <SelectItem value="educacao">
+                  <div className="flex items-center gap-2">
+                    <School className="h-4 w-4" />
+                    Educação
+                  </div>
+                </SelectItem>
+                <SelectItem value="seguranca">
+                  <div className="flex items-center gap-2">
+                    <Shield className="h-4 w-4" />
+                    Segurança
+                  </div>
+                </SelectItem>
+                <SelectItem value="administracao">
+                  <div className="flex items-center gap-2">
+                    <Building2 className="h-4 w-4" />
+                    Administração
+                  </div>
+                </SelectItem>
+              </SelectContent>
+            </Select>
 
-            <ToggleGroup type="single" value={viewMode} onValueChange={(value) => value && setViewMode(value)}>
-              <ToggleGroupItem value="markers" aria-label="Mostrar marcadores">
+            <ToggleGroup
+              type="single"
+              value={viewMode}
+              onValueChange={(value) => value && setViewMode(value)}
+              className="w-full sm:w-auto flex sm:ml-2"
+            >
+              <ToggleGroupItem value="markers" aria-label="Mostrar marcadores" className="flex-1 sm:flex-none">
                 <MapPin className="h-4 w-4 mr-2" />
                 Marcadores
               </ToggleGroupItem>
-              <ToggleGroupItem value="heatmap" aria-label="Mostrar mapa de calor">
+              <ToggleGroupItem value="heatmap" aria-label="Mostrar mapa de calor" className="flex-1 sm:flex-none">
                 <Flame className="h-4 w-4 mr-2" />
                 Mapa de Calor
               </ToggleGroupItem>

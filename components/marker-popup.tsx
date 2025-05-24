@@ -134,7 +134,7 @@ export default function MarkerPopup({ title, type, address, spending, category }
   }
 
   return (
-    <div className="w-[300px] p-2">
+    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md p-2 break-words overflow-auto">
       <div className="flex items-center gap-2 mb-2">
         <Icon className={`h-5 w-5 ${getIconColor()}`} />
         <h3 className="font-bold text-lg">{title}</h3>
