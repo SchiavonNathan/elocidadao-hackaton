@@ -140,10 +140,12 @@ export default function MarkerPopup({ title, type, address, spending, category }
         <h3 className="font-bold text-lg">{title}</h3>
       </div>
       <p className="text-sm text-muted-foreground mb-1">{type}</p>
-      <div className="flex items-center gap-1 text-sm mb-3">
-        <MapPin className="h-3 w-3" />
-        <span>{address}</span>
-      </div>
+      {(address && address !== "Endereço não disponível") && (
+        <div className="flex items-center gap-1 text-sm mb-3">
+          <MapPin className="h-3 w-3" />
+          <span>{address}</span>
+        </div>
+      )}
 
       <div className="border-t pt-2 mb-3">
         <div className="flex items-center justify-between mb-2">
